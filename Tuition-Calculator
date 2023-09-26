@@ -1,0 +1,86 @@
+#include <iostream>
+#include<string>
+#include<string.h>
+
+using namespace std;
+
+int main()
+{
+        cout<<"Subject:";
+        string s;
+        cin>>s;
+        cout<<endl;
+
+        cout<<"Month:";
+        int M;
+        cin>>M;
+        cout<<endl;
+
+        cout<<"Hourly tuition:";
+        double a;
+        cin>>a;
+        cout<<endl;
+
+        cout<<"Number of hours per class:";
+        double hr;
+        cin>>hr;
+        cout<<endl;
+
+        cout<<"Total number of classes:";
+        int b;
+        cin>>b;
+        cout<<endl;
+
+        int ans=0;
+        ans=a*hr*b;
+        string month="";
+        if(M==1)
+        {
+             month="Jan";
+        }
+        else if(M==2)
+        {
+                month="Feb";
+        }
+        else if(M==3)
+        {
+                month="Mar";
+        }
+        else if(M==4)
+        {
+                month="Apr";
+        }
+        else if(M==5)
+        {
+                month="May";
+        }
+        else if(M==6)
+        {
+                month="Jun";
+        }
+        else if(M==7)
+        {
+                month="Jul";
+        }
+        else if(M==8)
+        {
+                month="Aug";
+        }
+        else if(M==9)
+        {
+                month="Sep";
+        }
+        else if(M==10)
+        {
+                month="Oct";
+        }
+        else if(M==11)
+        {
+                month="Nov";
+        }
+        else if(M==12)
+        {
+                month="Dec";
+        }
+        cout<<s<<" class in "<<month<<" tuition fee "<<ans<<" dollars.";
+}
